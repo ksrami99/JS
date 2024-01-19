@@ -8,32 +8,32 @@ const user = {
     }
 }
 
-// user.walecomeMessage()
-// user.username = "sam"
-// user.walecomeMessage()
+user.walecomeMessage()
+user.username = "sam"
+user.walecomeMessage()
 
-// console.log(this);
+console.log(this);
 
-// function one(){
-//     console.log(this);
-// }
-// one()
+function one(){
+    console.log(this);
+}
+one()
 
-// const chai = () => {
-//     let username = "Karan"
-//     console.log(this.username);
-// }
+const chai = () => {
+    let username = "Karan"
+    console.log(this.username);
+}
 
-// chai()
+chai()
 
-// const addTwo = (num1, num2) => {
-//     return num1 + num2;
-// }
+const addTwo = (num1, num2) => {
+    return num1 + num2;
+}
 
-// const addTwo = (num1, num2) => return num1 + num2;
-// const addTwo = (num1, num2) => (num1 + num2)
+const addTwo = (num1, num2) => return num1 + num2;
+const addTwo = (num1, num2) => (num1 + num2)
 const addTwo = (num1, num2) => ({username: "Karan"})
 
 
-// console.log(addTwo(2,3));
+console.log(addTwo(2,3));
 
