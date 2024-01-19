@@ -47,3 +47,16 @@ console.log(users[1].email);
 console.log(Object.keys(tinderUser))
 console.log(Object.values(tinderUser))
 console.log(Object.entries(tinderUser))
+
+
+const course = {
+    courseName : "JS in Hindi",
+    coursePrice: "999",
+    courseInstructor : "Karan"
+}
+
+// const {courseInstructor} = course
+const {courseInstructor : Instructor} = course
+// console.log(courseInstructor);
+console.log(Instructor);
+
