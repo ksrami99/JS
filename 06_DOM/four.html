@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+
+<script>
+    function addLanguage(langName) {
+        const li = document.createElement('li')
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage('Python')
+    addLanguage("TypeScript")
+
+
+    function addOptiLang(langName) {
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+
+    addOptiLang('Java')
+    addOptiLang('CPP')
+
+
+    //Edit
+
+    const secondLang = document.querySelector("li:nth-child(2)")
+    console.log(secondLang);
+    const newLi = document.createElement('li')
+    newLi.textContent = "Ruby"
+    console.log(newLi)
+    secondLang.replaceWith(newLi)
+
+
+    // Edit
+
+    const thirdLang = document.querySelector("li:nth-child(3)")
+    const newLi2 = document.createElement('li')
+    newLi2.textContent = "JQuery"
+
+    thirdLang.replaceWith(newLi2)
+
+
+    // remove
+
+    const lastLang = document.querySelector('li:last-child')
+    console.log(lastLang);
+
+    lastLang.remove()
+    
+
+</script>
+
+</html>
